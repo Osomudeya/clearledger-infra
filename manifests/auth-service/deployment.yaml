@@ -34,7 +34,7 @@ spec:
         - name: auth-service
           # Replace veeno with your Docker Hub username.
           # This is updated automatically by the CI pipeline after Stage 1.
-          image: veeno/clearledger-auth-service:v0.1.0
+          image: docker.io/veeno/clearledger-auth-service:4381bb7b22ec0464335fb09ae9ffd3380454a4ff
           ports:
             - containerPort: 8000
           env:
