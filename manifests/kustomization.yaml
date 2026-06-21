@@ -8,32 +8,32 @@ kind: Kustomization
 namespace: clearledger
 
 resources:
-  - namespace.yaml
-  - ingress.yaml
-  - auth-service/deployment.yaml
-  - auth-service/service.yaml
-  - auth-service/secret.yaml
-  - ledger-service/deployment.yaml
-  - ledger-service/service.yaml
-  - ledger-service/secret.yaml
-  - notification-service/deployment.yaml
-  - notification-service/service.yaml
-  - frontend/deployment.yaml
-  - postgres/postgres.yaml
-  - postgres/postgres-secret.yaml
-  - redis/redis.yaml
-  - rbac/rbac.yaml
+- namespace.yaml
+- ingress.yaml
+- auth-service/deployment.yaml
+- auth-service/service.yaml
+- auth-service/secret.yaml
+- ledger-service/deployment.yaml
+- ledger-service/service.yaml
+- ledger-service/secret.yaml
+- notification-service/deployment.yaml
+- notification-service/service.yaml
+- frontend/deployment.yaml
+- postgres/postgres.yaml
+- postgres/postgres-secret.yaml
+- redis/redis.yaml
+- rbac/rbac.yaml
 
 images:
-  - name: clearledger/auth-service
-    newName: docker.io/veeno/clearledger-auth-service
-    newTag: v0.1.0
-  - name: clearledger/ledger-service
-    newName: docker.io/veeno/clearledger-ledger-service
-    newTag: v0.1.0
-  - name: clearledger/notification-service
-    newName: docker.io/veeno/clearledger-notification-service
-    newTag: v0.1.0
-  - name: clearledger/frontend
-    newName: docker.io/veeno/clearledger-frontend
-    newTag: v0.1.0
+- name: clearledger/auth-service
+  newName: docker.io/veeno/clearledger-auth-service
+  newTag: 04ffb9a50a1d79e0fd744d88dde95c52f3a52c8a
+- name: clearledger/frontend
+  newName: docker.io/veeno/clearledger-frontend
+  newTag: 04ffb9a50a1d79e0fd744d88dde95c52f3a52c8a
+- name: clearledger/ledger-service
+  newName: docker.io/veeno/clearledger-ledger-service
+  newTag: 04ffb9a50a1d79e0fd744d88dde95c52f3a52c8a
+- name: clearledger/notification-service
+  newName: docker.io/veeno/clearledger-notification-service
+  newTag: 04ffb9a50a1d79e0fd744d88dde95c52f3a52c8a
