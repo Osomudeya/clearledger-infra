@@ -27,13 +27,13 @@ resources:
 images:
 - name: clearledger/auth-service
   newName: docker.io/veeno/clearledger-auth-service
-  newTag: 55d75106606543eb5c112aeb24d3d6f020345419
+  newTag: 35080bacf55afe69b021e6905b29fa30a6c5346a
 - name: clearledger/frontend
   newName: docker.io/veeno/clearledger-frontend
-  newTag: 55d75106606543eb5c112aeb24d3d6f020345419
+  newTag: 35080bacf55afe69b021e6905b29fa30a6c5346a
 - name: clearledger/ledger-service
   newName: docker.io/veeno/clearledger-ledger-service
-  newTag: 55d75106606543eb5c112aeb24d3d6f020345419
+  newTag: 35080bacf55afe69b021e6905b29fa30a6c5346a
 - name: clearledger/notification-service
   newName: docker.io/veeno/clearledger-notification-service
-  newTag: 55d75106606543eb5c112aeb24d3d6f020345419
+  newTag: 35080bacf55afe69b021e6905b29fa30a6c5346a
